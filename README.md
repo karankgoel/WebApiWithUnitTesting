@@ -20,5 +20,5 @@ Run the following commands in the folder containing test project
 1. dotnet add package coverlet.msbuild 
 2. dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=TestResults\Coverage\ 
 3. dotnet tool install -g dotnet-reportgenerator-globaltool 
-4. reportgenerator -reports:"[Path where you saved the solution]\NAGP_eBroker\eBroker.Tests\TestResults\Coverage\coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html
-5. You will see index.html file in \NAGP_eBroker\eBroker.Tests\coveragereport location. Open index.html for code coverage report.
+4. reportgenerator -reports:"[Path where you saved the solution]\eBroker.Tests\TestResults\Coverage\coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html
+5. You will see index.html file in \eBroker.Tests\coveragereport location. Open index.html for code coverage report.
